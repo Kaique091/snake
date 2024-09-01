@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .btn{
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-40%, -40%);
+            background-color: transparent;
+            border: 0;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .btn a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+            background-color: black;
+           border-radius: 15px;
+           transition: 1s;
+        } 
+        #music{
+            position: absolute;
+            top: 80%;
+            left: 90%;
+            transform: translate(-40%, -40%);
+            background-color: transparent;
+            border: 0;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #music:hover{
+            cursor: pointer;
+            background-color: black;
+           border-radius: 15px;
+           transition: 1s;
+        }
+        #semMusic{
+            position: absolute;
+            top: 85%;
+            left: 90%;
+            transform: translate(-40%, -40%);
+            background-color: transparent;
+            border: 0;
+            font-size:15px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #semMusic:hover{
+            cursor: pointer;
+            background-color: black;
+           border-radius: 15px;
+           transition: 1s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/snake.jpg" alt="">
+        <button class="btn"><a href="snake.html" target="_parent">Jogar</a></button>
+    </div>
+   <audio src="audio/lady-of-the-80x27s-128379.mp3" id="music1"></audio>
+   <button id="music" onclick="ativar()">Ativar a musica</button>
+   <button id="semMusic" onclick="desativar()">desativar musica</button>
+
+
+
+    <script src="js/inicio.js"></script>
+</body>
+</html> 
